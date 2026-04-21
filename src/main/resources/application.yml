@@ -1,0 +1,13 @@
+mqtt:
+  broker-url: tcp://localhost:1883
+  client-id: iot-receiver-${random.uuid}
+  topics:
+    - "iot/#"
+  qos: 1
+  username: ""
+  password: ""
+
+logging:
+  level:
+    com.example.mqtttest: DEBUG
+    org.springframework.integration: INFO
