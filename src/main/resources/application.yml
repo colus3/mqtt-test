@@ -1,6 +1,6 @@
 mqtt:
-  broker-url: tcp://localhost:1883
-  client-id: iot-receiver-${random.uuid}
+  broker-url: ${MQTT_BROKER_URL:tcp://localhost:1883}
+  client-id: ${MQTT_CLIENT_ID:iot-receiver-1}
   topics:
     - "iot/#"
   qos: 1
